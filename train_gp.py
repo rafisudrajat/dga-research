@@ -181,8 +181,28 @@ def transform_small_dataset(small_dataset:pd.DataFrame)->pd.DataFrame:
     small_dataset = small_dataset[:-1]
 
     # Remove unnecessary feature from test data
-    # Select the first 7 columns, plus the 9th column (index 8)
-    small_dataset = small_dataset.iloc[:, list(range(7)) + [8]]
+    # Select the first 5 columns, plus the 9th column (index 8)
+    small_dataset = small_dataset.iloc[:, list(range(5)) + [8]]
 
     return small_dataset
+
+def print_report(reports_name: List[str], reports: Dict[str, ClassificationReport]):
+    class_count = 6
+    for name in reports_name:
+        name_splitted = name.split("_")
+        report_name = name_splitted[0]
+        selected_class_data_count = int(name_splitted[1])
+        rest_of_class_data_count = int(name_splitted[2]) * (class_count - 1)
+        print("=" * 40)
+        print(f"Classifier: {report_name}")
+        print("-" * 40)
+        print("Training Data Distribution:")
+        print(f"  Selected class samples : {selected_class_data_count}")
+        print(f"  Rest of class samples  : {rest_of_class_data_count}")
+        print("-" * 40)
+        print("Training Accuracy:")
+        print(f"  Correct predictions on sampled test data   : {reports[name].correct_prediction_count}")
+        print(f"  Incorrect predictions on sampled test data : {reports[name].incorrect_prediction_count}")
+        print(f"  Percentage of correct prediction : {reports[name].correct_percentage} %")
+        print("=" * 40 + "\n")
         
