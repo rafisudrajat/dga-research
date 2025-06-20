@@ -483,6 +483,24 @@
          Percentage of correct prediction : 93.56223175965665 %
          ========================================
 
+7. Classification using all data report
+   
+         Prediction for selected class= 30, rest= 30 
+         Number of correct prediction = 249
+         Percentage of correct prediction = 72.59475218658892
+         ========================================
+         Prediction for selected class= 30, rest= 15 
+         Number of correct prediction = 262
+         Percentage of correct prediction = 76.38483965014578
+         ========================================
+         Prediction for selected class= 20, rest= 10 
+         Number of correct prediction = 223
+         Percentage of correct prediction = 65.01457725947522
+         ========================================
+         Prediction for selected class= 10, rest= 5 
+         Number of correct prediction = 198
+         Percentage of correct prediction = 57.7259475218659
+
 ### Gaussian process one vs one
 
 1. 30 train data for each class
