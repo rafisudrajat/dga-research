@@ -598,7 +598,57 @@
          ========================================
          Number of correct prediction =  230
          Accuracy = 67.05539358600583
+
+### Random Forest
+
+1. 30 train data for each class
+        
+        Using val data
+        ========================================
+        Number of correct prediction =  113
+        Accuracy = 69.32515337423312
             
+        Using all data
+        ========================================
+        Number of correct prediction =  293
+        Accuracy = 85.42274052478133
+         
+2. 20 train data for each class
+
+        Using val data
+        ========================================
+        Number of correct prediction =  149
+        Accuracy = 66.81614349775785
+
+        Using all data
+        ========================================
+        Number of correct prediction =  269
+        Accuracy = 78.4256559766764
+
+3. 10 train data for each class
+
+        Using val data
+        ========================================
+        Number of correct prediction =  190
+        Accuracy = 67.13780918727915
+
+        Using all data
+        ========================================
+        Number of correct prediction =  250
+        Accuracy = 72.8862973760933         
+         
+4. 5 train data for each class
+
+        Using val data
+        ========================================
+        Number of correct prediction =  202
+        Accuracy = 64.5367412140575
+
+        Using all data
+        ========================================
+        Number of correct prediction =  232
+        Accuracy = 67.63848396501457
+             
 ### MLP
 
 1. 30 train data for each class
